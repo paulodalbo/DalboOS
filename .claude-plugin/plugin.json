@@ -1,0 +1,33 @@
+{
+  "name": "dalboos",
+  "displayName": "DalboOS",
+  "version": "0.2.0",
+  "description": "The operating kit for marketing agencies in Claude Code. Each client gets a folder with their business facts, voice, focus and brand guide, loaded automatically in every conversation, plus 15 skills for prospecting, preview sites, proposals, monthly content, carousels, review replies, local SEO, Google Ads and client reports. Built for agencies and freelancers serving local businesses in Australia and the US.",
+  "author": {
+    "name": "Paulo Dal Bó"
+  },
+  "homepage": "https://github.com/paulodalbo/DalboOS",
+  "repository": "https://github.com/paulodalbo/DalboOS",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "plugin",
+    "skills",
+    "marketing",
+    "agency",
+    "local-business",
+    "client-memory",
+    "brand-voice",
+    "australia",
+    "usa"
+  ],
+  "skills": "./skills/",
+  "userConfig": {
+    "guardGit": {
+      "type": "boolean",
+      "title": "Ask before destructive git commands",
+      "description": "Inside an DalboOS workspace, ask for confirmation before git commands that can discard work or rewrite history, such as push --force, reset --hard and clean -f.",
+      "default": true
+    }
+  }
+}

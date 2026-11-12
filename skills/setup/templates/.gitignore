@@ -1,0 +1,20 @@
+# Keys and credentials never go into git
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Operating system and editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Dependencies and temporary files
+node_modules/
+*.log
+*.tmp
+
+# Local Claude Code settings
+.claude/settings.local.json

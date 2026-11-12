@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="{{LANG}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<style>
+  @page { size: {{PAGE_SIZE}}; margin: 18mm; }
+  :root { --brand: {{BRAND}}; --ink: #14171a; --muted: #5b6470; --line: #dfe3e8; }
+  * { box-sizing: border-box; }
+  body { margin: 0 auto; max-width: 800px; padding: 40px 24px; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--ink); line-height: 1.55; font-size: 15px; }
+  @media print { body { padding: 0; max-width: none; } }
+  header { border-bottom: 3px solid var(--brand); padding-bottom: 20px; margin-bottom: 28px; }
+  .agency { font-weight: 800; font-size: 18px; color: var(--brand); }
+  .meta { color: var(--muted); font-size: 13px; }
+  h1 { font-size: 30px; line-height: 1.15; letter-spacing: -.01em; margin: 18px 0 6px; }
+  h2 { font-size: 18px; margin: 0 0 10px; }
+  h3 { font-size: 15px; margin: 0 0 6px; }
+  section { margin: 0 0 26px; break-inside: avoid; }
+  ul { margin: 0; padding-left: 20px; }
+  li { margin-bottom: 4px; }
+  .block { margin-bottom: 14px; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; padding: 9px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+  td small { display: block; color: var(--muted); }
+  .num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .total td { font-weight: 700; border-bottom: none; }
+  .note { color: var(--muted); font-size: 13px; margin-top: 8px; }
+  .next { background: #f5f6f8; border-radius: 10px; padding: 16px 18px; }
+  footer { margin-top: 32px; color: var(--muted); font-size: 12px; border-top: 1px solid var(--line); padding-top: 12px; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="agency">{{AGENCY}}</div>
+    <h1>{{TITLE}}</h1>
+    <div class="meta">Prepared for {{CLIENT}} {{CONTACT}} · {{DATE}} · {{VALID_UNTIL}}</div>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p>{{SUMMARY}}</p>
+  </section>
+
+  {{PROBLEMS}}
+
+  <section>
+    <h2>What we will do</h2>
+    {{SCOPE}}
+  </section>
+
+  <section>
+    <h2>Investment</h2>
+    <table>
+      <thead><tr><th>Item</th><th>Billing</th><th class="num">Price</th></tr></thead>
+      <tbody>
+        {{PRICING_ROWS}}
+        {{TOTAL_ROWS}}
+      </tbody>
+    </table>
+    <p class="note">{{TAX_NOTE}}</p>
+  </section>
+
+  {{TIMELINE}}
+
+  {{TERMS}}
+
+  <section class="next">
+    <h2>Next step</h2>
+    <p>{{NEXT_STEP}}</p>
+  </section>
+
+  <footer>{{AGENCY}} · {{AGENCY_DETAILS}}</footer>
+</body>
+</html>

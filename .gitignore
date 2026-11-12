@@ -1,0 +1,23 @@
+# Operating system and editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Types Claude Code writes when it loads the mod
+.claude-plugin/types/
+
+# Dependencies and temporary files
+node_modules/
+*.log
+*.tmp
+
+# Local Claude Code settings
+.claude/settings.local.json
+
+# Keys and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key

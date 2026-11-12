@@ -1,0 +1,4 @@
+{
+  "description": "DalboOS: loads the agency's and the active client's memory into each conversation, and adds the /dalbo-status command.",
+  "modules": ["./register.js"]
+}

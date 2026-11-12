@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="{{LANG}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>{{NAME}} · website preview</title>
+<style>
+  :root { --brand: {{BRAND}}; --brand-dark: {{BRAND_DARK}}; --on-brand: {{ON_BRAND}}; --ink: #14171a; --muted: #5b6470; --line: #e4e7eb; --bg: #ffffff; --soft: #f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.55; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+  .preview-bar { background: #14171a; color: #fff; font-size: 14px; padding: 8px 0; text-align: center; }
+  header.top { display: flex; justify-content: space-between; align-items: center; padding: 18px 0; }
+  .logo { font-weight: 800; font-size: 20px; letter-spacing: -.01em; }
+  .btn { display: inline-block; background: var(--brand); color: var(--on-brand); padding: 12px 20px; border-radius: 8px; font-weight: 700; text-decoration: none; }
+  .btn:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+  .hero { background: {{HERO}}; color: #fff; padding: 88px 0; }
+  .hero h1 { font-size: clamp(32px, 6vw, 56px); line-height: 1.08; margin: 0 0 16px; letter-spacing: -.02em; max-width: 16ch; }
+  .hero p { font-size: 19px; max-width: 52ch; margin: 0 0 28px; }
+  .hero .btn { background: #fff; color: var(--brand-dark); }
+  .hero .area { opacity: .85; font-size: 15px; margin-top: 18px; }
+  .rating { font-weight: 700; margin: 0 0 12px; }
+  section { padding: 64px 0; }
+  h2 { font-size: 30px; letter-spacing: -.01em; margin: 0 0 24px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .card { border: 1px solid var(--line); border-radius: 12px; padding: 22px; background: #fff; }
+  .card h3 { margin: 0 0 8px; font-size: 19px; }
+  .card p { margin: 0; color: var(--muted); }
+  .reviews { background: var(--soft); padding: 40px 28px; border-radius: 12px; margin-bottom: 8px; }
+  blockquote { margin: 0 0 16px; padding: 20px 22px; background: #fff; border-left: 4px solid var(--brand); border-radius: 0 12px 12px 0; }
+  blockquote p { margin: 0 0 8px; }
+  cite { color: var(--muted); font-style: normal; font-size: 15px; }
+  .contact { text-align: center; }
+  .contact p { color: var(--muted); margin: 6px 0; }
+  footer { border-top: 1px solid var(--line); padding: 24px 0; color: var(--muted); font-size: 14px; text-align: center; }
+</style>
+</head>
+<body>
+  <div class="preview-bar">Preview prepared by {{AGENCY}} for {{NAME}}. This is a concept, not the business's live website.</div>
+  <div class="wrap">
+    <header class="top">
+      <div class="logo">{{NAME}}</div>
+      <a class="btn" href="{{CONTACT_HREF}}">{{CTA}}</a>
+    </header>
+  </div>
+  <div class="hero">
+    <div class="wrap">
+      {{RATING}}
+      <h1>{{HEADLINE}}</h1>
+      <p>{{INTRO}}</p>
+      <a class="btn" href="{{CONTACT_HREF}}">{{CTA}}</a>
+      <p class="area">{{AREA}}</p>
+    </div>
+  </div>
+  <main>
+    <section>
+      <div class="wrap">
+        <h2>{{SERVICES_TITLE}}</h2>
+        <div class="grid">
+        {{SERVICES}}
+        </div>
+      </div>
+    </section>
+    <div class="wrap">
+      {{REVIEWS_SECTION}}
+    </div>
+    <section class="contact">
+      <div class="wrap">
+        <h2>Get in touch</h2>
+        <p>{{PHONE}}</p>
+        <p>{{EMAIL}}</p>
+        <p>{{ADDRESS}}</p>
+        <p style="margin-top:20px"><a class="btn" href="{{CONTACT_HREF}}">{{CTA}}</a></p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">Concept preview by {{AGENCY}}. Details shown are from public listings and may need correcting.</div>
+  </footer>
+</body>
+</html>

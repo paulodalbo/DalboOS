@@ -1,0 +1,8 @@
+Campaign report
+"1 November 2026 - 30 November 2026"
+Campaign,Campaign state,Currency code,Cost,Impr.,Clicks,Conversions,Conv. rate
+"Plumbing - Southport",Enabled,AUD,"1,020.50","12,400",310,21.00,6.77%
+Hot Water,Enabled,AUD,468.00,"5,100",96,10.00,10.42%
+Brand,Paused,AUD,0.00,0,0,0.00,--
+Total: Campaigns,,AUD,"1,488.50","17,500",406,31.00,7.64%
+Total: Account,,AUD,"1,488.50","17,500",406,31.00,7.64%

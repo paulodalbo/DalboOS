@@ -1,0 +1,22 @@
+{
+  "name": "dalboos",
+  "description": "DalboOS: client memory, brand guides and marketing workflows for agencies using Claude Code.",
+  "owner": {
+    "name": "Paulo Dal Bó"
+  },
+  "plugins": [
+    {
+      "name": "dalboos",
+      "source": "./",
+      "description": "Client memory loaded automatically, plus 15 skills for prospecting, preview sites, proposals, monthly content, carousels, review replies, local SEO, Google Ads and client reports.",
+      "category": "productivity",
+      "tags": [
+        "marketing",
+        "agency",
+        "local-business",
+        "client-memory",
+        "brand-voice"
+      ]
+    }
+  ]
+}
